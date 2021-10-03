@@ -1,0 +1,31 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	min-width: 300px;
+	font-size: 20px;
+	line-height: 24px;
+	color: $primary-color;
+	@extend %sf-400;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto; 
+	padding: 0 15px;
+}
+
+.page-section {
+	margin-bottom: 80px;
+}

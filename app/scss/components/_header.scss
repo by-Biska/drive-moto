@@ -1,0 +1,96 @@
+.header {
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 122px;
+        @extend %sf-700;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+    &__address {
+        margin-right: 15px;
+        padding-left: 30px;
+        width: 265px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/address-ico.svg");
+            background-repeat: no-repeat;
+            left: 0;
+            top: 8px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .user-list {
+        margin-right: 15px;
+        &__item {
+            display: inline-block;
+            padding-right: 10px;
+        }
+    }
+
+    &__bottom {
+        margin-bottom: 80px;
+    }
+    &-categories {
+        background-color: $gray;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 53px;
+    }
+    &-categories__link {
+        transition: all 0.3s;
+        padding: 15px 0 14px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            left: auto;
+            right: 0;
+            bottom: -4px;
+            background-color: $secondary-color;
+            height: 3px;
+            transition: all .3s;
+        }
+        &:hover {
+            // border-bottom: 3px solid $secondary-color;
+            &::after {
+                width: 100%;
+                right: auto;
+                left: 0;
+            }
+            text-shadow: -.25px -.25px 0 $primary-color, .25px -.25px 0 $primary-color, -.25px .25px 0 $primary-color, .25px .25px 0 $primary-color;
+        }
+    }
+}
+.menu__item {
+    display: inline-block;
+    & + & {
+        padding-left: 50px;
+    }
+}
+
+.basket {
+    position: relative;
+    &__num {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 20px;
+        @extend %sf-500;
+        color: #fff;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        text-align: center;
+        bottom: -2px;
+        right: -14px;
+    }
+}
