@@ -48,6 +48,9 @@ function images() {
 function scripts() {
   return src([
     "node_modules/jquery/dist/jquery.js",
+    "app/libs/ion.rangeSlider-master/js/ion.rangeSlider.js",
+    "app/libs/jQueryFormStyler-master/dist/jquery.formstyler.js",
+    "app/libs/v2.3.2/v2.3.2/jquery.rateyo.js",
     "node_modules/slick-carousel/slick/slick.js",
     "app/js/main.js",
   ])

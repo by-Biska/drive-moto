@@ -1,0 +1,184 @@
+.aside-filter {
+    width: 290px;
+    margin-right: 10px;
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__tab {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: #c4c4c4;
+        width: 50%;
+        &.tab--active {
+            @extend %sf-700;
+            color: #2f3035;
+            span {
+                display: inline-block;
+                border-bottom: 2px solid $secondary-color;
+                padding-bottom: 7px;
+            }
+        }
+    }
+    &__item-drop {
+        margin: 40px 0;
+    }
+    &__item-title {
+        @extend %sf-600;
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 26px;
+    }
+    .filter__item-drop {
+        position: relative;
+        cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../../../images/drop-down.svg");
+            left: 0;
+            bottom: 5px;
+            width: 12px;
+            height: 8px;
+        }
+    }
+    .filter__item-drop--active {
+        &::before {
+            transform: rotate(-180deg);
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        &-radio {
+            flex-wrap: nowrap;
+            .aside-filter__content-box {
+                width: auto;
+            }
+        }
+        &-label {
+            font-size: 14px;
+            line-height: 17px;
+            cursor: pointer;
+            transition: all 0.2s;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+        &-box {
+            width: 50%;
+        }
+    }
+}
+
+.jq-checkbox,
+.jq-radio {
+    vertical-align: -2px;
+    margin: 0 8px 0 0;
+    width: 14px;
+    height: 14px;
+    box-shadow: none;
+    background: #fff;
+    border: 1px solid $light-gray;
+    border-radius: 0;
+
+    &.checked {
+        background: $secondary-color;
+        & .jq-checkbox__div {
+            border-bottom: none;
+            border-left: none;
+            width: 8px;
+            height: 6px;
+            margin: 3px 0 0 2.5px;
+            transform: rotate(0);
+            background-image: url("../../../images/checked-ico.svg");
+        }
+    }
+}
+
+.jq-radio.checked .jq-radio__div {
+    border-bottom: none;
+    border-left: none;
+    width: 0;
+    height: 0;
+    transform: rotate(0);
+    background: transparent;
+    box-shadow: none;
+}
+
+.irs--flat {
+    width: 100%;
+    margin-top: -15px;
+}
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    display: none;
+}
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    top: 55px;
+    padding: 0;
+    color: $primary-color;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    text-shadow: none;
+    background-color: transparent;
+    border-radius: 0;
+    @extend %barlow-400;
+    visibility: visible !important;
+    padding-left: 27px;
+}
+.irs--flat .irs-min {
+    padding-left: 43px;
+}
+.irs-min::before,
+.irs-max::before {
+    position: absolute;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: none;
+    color: $light-gray;
+    left: 0;
+}
+.irs-min::before {
+    content: "from";
+}
+.irs-max::before {
+    content: "to";
+}
+.irs--flat .irs-line {
+    top: 25px;
+    height: 1px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+.irs--flat .irs-bar {
+    top: 25px;
+    height: 3px;
+    background-color: $secondary-color;
+}
+.irs--flat .irs-handle {
+    top: 22px;
+    width: 8px;
+    height: 8px;
+    background-color: $secondary-color;
+    border-radius: 50%;
+}
+.irs--flat .irs-handle > i:first-child,
+.irs--flat .irs-handle.state_hover > i:first-child,
+.irs--flat .irs-handle:hover > i:first-child {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+    background-color: transparent;
+}
