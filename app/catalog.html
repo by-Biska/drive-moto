@@ -97,10 +97,7 @@
             <a href="index.html">Home</a>
           </li>
           <li class="breadcrumbs__list-item">
-            <a href="catalog.html">Jet skis</a>
-          </li>
-          <li class="breadcrumbs__list-item">
-            <span>Jet ski BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
+            <span>Jet skis</span>
           </li>
         </ul>
       </div>
@@ -112,18 +109,18 @@
         <h2 class="catalog__title">Jet ski</h2>
         <div class="catalog__filter">
           <div class="catalog__filter-items">
-            <button>Four-wheel drive</button>
-            <button>from 5000</button>
-            <button>BRP</button>
-            <button>more</button>
+            <button class="catalog__filter-itemsbtn">Four-wheel drive</button>
+            <button class="catalog__filter-itemsbtn">from 5000</button>
+            <button class="catalog__filter-itemsbtn">BRP</button>
+            <button class="catalog__filter-itemsbtn">more</button>
           </div>
           <div class="catalog__filter-btn">
-            <select class="filter-style">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
+            <select class="filter-style select-item">
+              <option value="">By polarity</option>
+              <option value="">By polarity</option>
+              <option value="">By polarity</option>
             </select>
-            <button class="catalog__filter-btngrid">
+            <button class="catalog__filter-btngrid catalog__filter-button catalog__filter-button--active">
               <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2" />
                 <rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
@@ -132,9 +129,9 @@
                 <rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
               </svg>
             </button>
-            <button class="catalog__filter-btnline">
+            <button class="catalog__filter-btnline catalog__filter-button">
               <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.3">
+                <g>
                   <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035" />
                   <rect x="6" y="8" width="19" height="3" rx="1.5" fill="#2F3035" />
                   <rect x="6" y="16" width="19" height="3" rx="1.5" fill="#2F3035" />
@@ -150,11 +147,11 @@
           <aside class="catalog__inner-aside aside-filter">
             <div class="tabs-wrapper">
               <div class="tabs aside-filter__tabs">
-                <a class="tab aside-filter__tab tab--active" href="#"><span>Options</span></a>
-                <a class="tab aside-filter__tab" href="#"><span>By barnd</span></a>
+                <a class="tab aside-filter__tab tab--active" href="#aside-filter-tab-1"><span>Options</span></a>
+                <a class="tab aside-filter__tab" href="#aside-filter-tab-2"><span>By barnd</span></a>
               </div>
               <div class="tabs-container">
-                <div class="tabs-content aside-filter__tabs-content tabs-content--active">
+                <div id="aside-filter-tab-1" class="tabs-content aside-filter__tabs-content tabs-content--active">
                   <form class="aside-filter__form">
                     <ul class="aside-filter__list">
                       <li class="aside-filter__item-drop">
@@ -200,15 +197,175 @@
                       <li class="aside-filter__item-drop">
                         <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Price</p>
                         <div class="aside-filter__content">
-                          <input type="text" class="js-range-slider" name="my_range" value=""
-                            data-min="2000" data-max="40000" data-from="6000" data-to="20000" data-grid="false" />
+                          <input type="text" class="js-range-slider" name="my_range" value="" data-min="2000"
+                            data-max="40000" data-from="6000" data-to="20000" data-grid="false" />
                         </div>
                       </li>
-                      <li class="aside-filter__item-list"></li>
+                      <li class="aside-filter__item-list">
+                        <div class="filter__item-list">
+                          <p class="filter__item-listtitle">Power, h.p.</p>
+                          <select class="filter-style filter__item-listselect">
+                            <option>90</option>
+                            <option>130</option>
+                            <option>154</option>
+                            <option>230</option>
+                            <option>300</option>
+                          </select>
+                        </div>
+                        <div class="filter__item-list">
+                          <p class="filter__item-listtitle">Engine power, h.p.</p>
+                          <select class="filter-style filter__item-listselect">
+                            <option>90</option>
+                            <option>130</option>
+                            <option>154</option>
+                            <option>230</option>
+                            <option>300</option>
+                          </select>
+                        </div>
+                        <div class="filter__item-list">
+                          <p class="filter__item-listtitle">Max. speed</p>
+                          <select class="filter-style filter__item-listselect">
+                            <option>90</option>
+                            <option>130</option>
+                            <option>154</option>
+                            <option>230</option>
+                            <option>300</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li class="aside-filter__item-drop">
+                        <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Brand</p>
+                        <div class="aside-filter__content">
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" checked>
+                              BRP
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" checked>
+                              Spark 2
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox">
+                              Spark 3
+                            </label>
+                          </div>
+                          <div class="filter-more">
+                            <button class="filter-more__btn">Show more</button>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="aside-filter__item-drop">
+                        <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Model</p>
+                        <div class="aside-filter__content">
+                          <input class="filter-search" type="text" placeholder="Enter model">
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" checked>
+                              Sea-doo Spark 2
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" checked>
+                              SeaDoo Spark 90
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox">
+                              SeaDoo GTI 155
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox">
+                              SeaDoo GTR 230
+                            </label>
+                          </div>
+                          <div class="filter-more">
+                            <button class="filter-more__btn">Show more</button>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="aside-filter__item-drop btn-checked">
+                        <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Discounts</p>
+                        <div class="aside-filter__content">
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" checked>
+                              <span class="btn-checked__text">SALE</span>
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox">
+                              <span class="btn-checked__text">NEW</span>
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox">
+                              <span class="btn-checked__text">HIT</span>
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" checked>
+                              <span class="btn-checked__text">DEALER</span>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="aside-filter__item-drop">
+                        <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Countries</p>
+                        <div class="aside-filter__content">
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" checked>
+                              Germany
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" checked>
+                              China
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox">
+                              Russia
+                            </label>
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox">
+                              USA
+                            </label>
+                          </div>
+                          <div class="filter-more">
+                            <button class="filter-more__btn">Show more</button>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="aside-filter__item-drop aside-filter__item-btn">
+                        <button class="filter-btn__select" type="submit">select</button>
+                        <p class="filter__item-drop filter__extra">Extra options</p>
+                        <div class="filter__extra-content">more</div>
+                        <button class="filter-btn__reset" type="submit">Reset filter</button>
+                      </li>
                     </ul>
                   </form>
                 </div>
-                <div class="tabs-content aside-filter__tabs-content">content-2</div>
+                <div id="aside-filter-tab-2" class="tabs-content aside-filter__tabs-content">content-2</div>
               </div>
             </div>
           </aside>
@@ -227,7 +384,7 @@
                       <img src="images/content/jetski-1.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
+                      <h4 class="products-item__title">Jet ski BRP SeaDoo GTI 130hp SE Black\Mango</h4>
                       <p class="products-item__price">15 000 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -241,13 +398,13 @@
                     <img src="images/basket-white-ico.svg" alt="">
                   </button>
                   <a class="products-item__notify-link" href="#"><span>Notify on admission</span></a>
-                  <a class="products-item" href="#">
+                  <a class="products-item" href="product-page.html">
                     <p class="products-item__hover-text">view product</p>
                     <div class="products-item__img">
                       <img src="images/content/jetski-2.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h4>
+                      <h4 class="products-item__title">Jet ski BRP SeaDoo GTI 155hp SE Long Blue Metallic</h4>
                       <p class="products-item__price">14 320 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -267,7 +424,7 @@
                       <img src="images/content/jetski-3.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл BRP SeaDoo GTR 230hp X California green</h4>
+                      <h4 class="products-item__title">Jet ski BRP SeaDoo GTR 230hp X California green</h4>
                       <p class="products-item__price">13 430 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -287,7 +444,7 @@
                       <img src="images/content/jetski-4.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream</h4>
+                      <h4 class="products-item__title">Jet ski BRP SeaDoo GTR 230hp STD Black / Gulfstream</h4>
                       <p class="products-item__price">13 220 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -307,7 +464,7 @@
                       <img src="images/content/jetski-5.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal</h4>
+                      <h4 class="products-item__title">Jet ski BRP SeaDoo GTX 300hp LTD Liquid Metal</h4>
                       <p class="products-item__price">20 130 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -327,7 +484,7 @@
                       <img src="images/content/jetski-6.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл BRP SeaDoo Spark 60hp 2 up</h4>
+                      <h4 class="products-item__title">Jet ski BRP SeaDoo Spark 60hp 2 up</h4>
                       <p class="products-item__price">10 360 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -347,7 +504,7 @@
                       <img src="images/content/jetski-7.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл BRP SeaDoo Spark GTS 90hp Rental</h4>
+                      <h4 class="products-item__title">Jet ski BRP SeaDoo Spark GTS 90hp Rental</h4>
                       <p class="products-item__price">11 030 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -367,7 +524,7 @@
                       <img src="images/content/jetski-8.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue</h4>
+                      <h4 class="products-item__title">Jet ski BRP SeaDoo WAKE 230hp PRO Teal blue</h4>
                       <p class="products-item__price">17 000 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -387,7 +544,7 @@
                       <img src="images/content/jetski-9.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper</h4>
+                      <h4 class="products-item__title">Jet ski Spark 2-UP 900 Ho Ace Chili Pepper</h4>
                       <p class="products-item__price">7 100 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -407,7 +564,7 @@
                       <img src="images/content/jetski-10.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл Spark 2-UP 900 Ho Ace Pineapple</h4>
+                      <h4 class="products-item__title">Jet ski Spark 2-UP 900 Ho Ace Pineapple</h4>
                       <p class="products-item__price">6 120 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -427,7 +584,7 @@
                       <img src="images/content/jetski-11.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla </h4>
+                      <h4 class="products-item__title">Jet ski BRP Sea-doo Spark 2-UP 900 Ace Vanilla </h4>
                       <p class="products-item__price">130 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>
@@ -447,7 +604,7 @@
                       <img src="images/content/jetski-12.webp" alt="">
                     </div>
                     <div class="products-item__info">
-                      <h4 class="products-item__title">Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry</h4>
+                      <h4 class="products-item__title">Jet ski Spark 3-UP 900 HO Ace IBR Blueberry</h4>
                       <p class="products-item__price">11 230 $</p>
                       <p class="products-item__notify-text">not available</p>
                     </div>

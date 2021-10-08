@@ -35,10 +35,13 @@ $(function () {
       '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/products-arrow-right.svg"></button>',
   });
 
+  // catalog grid & line
+
+
   // form-styler
   $(".filter-style").styler();
 
-  $(".filter__item-drop").on("click", function () {
+  $(".filter__item-drop, .filter__extra").on("click", function () {
     $(this).toggleClass('filter__item-drop--active')
     $(this).next().slideToggle(200)
   });
@@ -46,5 +49,25 @@ $(function () {
   // price slider
   $(".js-range-slider").ionRangeSlider({
     type="double",
+  });
+
+  $('.catalog__filter-btngrid').on("click", function () {
+    $(this).addClass('catalog__filter-button--active')
+    $('.catalog__filter-btnline').removeClass('catalog__filter-button--active')
+    $('.catalog__inner-content').removeClass('catalog__inner-content--list')
+  });
+  $('.catalog__filter-btnline').on("click", function () {
+    $(this).addClass('catalog__filter-button--active')
+    $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active')
+    $('.catalog__inner-content').addClass('catalog__inner-content--list')
+    $(".products-item__wrapper").addClass('products-item__wrapper--line')
+  });
+
+  // rate
+  $(".rate-yo").rateYo({
+    starWidth: "24px",
+    ratedFill: "#1c62cd",
+    spacing: "7px",
+    normalFill: "#C4C4C4"
   });
 });

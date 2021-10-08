@@ -1,0 +1,118 @@
+.card__tabs {
+    margin-bottom: 100px;
+}
+.card__tab-box {
+    background-color: $gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 22px 0 18px 0;
+    margin-bottom: 50px;
+}
+.card__tab {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 5px;
+    opacity: 0.6;
+    position: relative;
+    transition: all 0.3s;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $secondary-color;
+        opacity: 0;
+    }
+    &.tab--active {
+        opacity: 1;
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+.card__top-line {
+    margin-bottom: 10px;
+}
+.card__label-search {
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba($primary-color, 0.7);
+    position: relative;
+}
+.card__input-search {
+    background: $gray;
+    border-radius: 3px;
+    padding: 9px 37px 9px 17px;
+    border: none;
+    margin-right: 100px;
+    margin-left: 17px;
+}
+.card__icon-search {
+    position: absolute;
+    width: 16px;
+    height: 17px;
+    right: 119px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../../images/search.svg");
+    z-index: 6;
+}
+.card__label-pickup {
+    margin-left: 54px;
+    color: rgba($primary-color, 0.7);
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.card__list {
+    &-item {
+        display: flex;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba($primary-color, 0.1);
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba($primary-color, 0.7);
+        &title {
+            color: $primary-color;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    &-address {
+        width: 220px;
+        margin-right: 80px;
+    }
+    &-workhours {
+        width: 163px;
+        margin-right: 90px;
+        .workhours {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &-availability {
+        width: 140px;
+        margin-right: 60px;
+    }
+    &-num {
+        width: 104px;
+    }
+    &-btn {
+        margin-left: auto;
+        button {
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0.12em;
+            color: #ffffff;
+            padding: 10px 40px;
+            background-color: $secondary-color;
+            border: none;
+            border-radius: 3px;
+        }
+    }
+}
