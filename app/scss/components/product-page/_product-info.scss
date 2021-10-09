@@ -63,6 +63,17 @@
         background-color: transparent;
         cursor: pointer;
     }
+    &__icon-favorite {
+        width: 24px;
+        height: 22px;
+        background-image: url('../../../images/favorite.svg');
+        display: inline-block;
+        outline: none;
+        transition: all .3s;
+        &.active {
+            background-image: url("../../../images/favorite-active.svg");
+        }
+    }
     &__icon-compare,
     .rate {
         margin-left: 23px;

@@ -21,8 +21,8 @@ $(function () {
   });
 
   // Favorite
-  $(".products-item__favorite").on("click", function () {
-    $(this).toggleClass("products-item__favorite--active");
+  $(".products-item__favorite, .product-card__icon-favorite").on("click", function () {
+    $(this).toggleClass("active");
   });
 
   // products-slider
@@ -69,5 +69,10 @@ $(function () {
     ratedFill: "#1c62cd",
     spacing: "7px",
     normalFill: "#C4C4C4"
+  });
+
+  // menu mobile
+  $('.menu__btn').on("click", function () {
+    $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
   });
 });
