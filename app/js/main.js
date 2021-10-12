@@ -33,9 +33,50 @@ $(function () {
       '<button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="images/products-arrow-left.svg"></button>',
     nextArrow:
       '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/products-arrow-right.svg"></button>',
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1301,
+          settings: {
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 1201,
+          settings: {
+            arrows: false,
+            dots: true,
+          }
+        },
+        {
+          breakpoint: 1165,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 895,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
   });
-
-  // catalog grid & line
 
 
   // form-styler
@@ -74,5 +115,11 @@ $(function () {
   // menu mobile
   $('.menu__btn').on("click", function () {
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+  });
+
+  // footer
+  $('.footer__top-title').on("click", function () {
+    $(this).next().slideToggle(200)
+    $(this).toggleClass('footer__top-title--active')
   });
 });

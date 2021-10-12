@@ -12,6 +12,9 @@ body {
 	color: $primary-color;
 	@extend %sf-400;
 }
+.wrapper {
+	overflow-x: hidden;
+}
 
 .main {
 	flex: 1 0 auto;

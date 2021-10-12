@@ -71,7 +71,7 @@
         z-index: 5;
         cursor: pointer;
         outline: none;
-        transition: all .3s;
+        transition: all 0.3s;
         &::before {
             content: "";
             position: absolute;
@@ -80,7 +80,7 @@
             height: 22px;
             top: 0;
             left: 0;
-            transition: all .3s;
+            transition: all 0.3s;
         }
         &.active::before {
             background-image: url("../../images/favorite-active.svg");
@@ -190,7 +190,7 @@
     left: -40px;
 }
 .products-slider__slider-btnnext {
-    right: -40px;
+    right: -17px;
 }
 .products__more-btn {
     margin-top: 35px;
@@ -202,7 +202,7 @@
         font-size: 15px;
         line-height: 18px;
         letter-spacing: 0.12em;
-        transition: all .3s;
+        transition: all 0.3s;
         &:hover {
             box-shadow: 0.1875rem 0.1875rem 0.625rem rgb(50 50 50 / 25%);
         }
@@ -211,4 +211,41 @@
 
 .banner {
     margin-bottom: 80px;
+    &__img {
+        object-fit: cover;
+        object-position: center;
+    }
+    &__img-mobile {
+        display: none;
+    }
+}
+
+.products-slider {
+    .slick-dots {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: -13%;
+        display: none;
+        li {
+            display: inline-block;
+            padding: 0 22px;
+            button {
+                padding: 0;
+                font-size: 0;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                border: none;
+                background-color: $dark-gray;
+            }
+            &.slick-active {
+                button {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
 }

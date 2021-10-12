@@ -14,7 +14,8 @@
     &__top-social {
         align-self: center;
     }
-    &__top-title {
+    &__top-title,
+    &__title {
         font-size: 14px;
         line-height: 17px;
         @extend %sf-700;
