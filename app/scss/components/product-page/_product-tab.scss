@@ -45,6 +45,9 @@
     align-items: center;
 }
 .card__label-search {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
     font-size: 17px;
     line-height: 20px;
     color: rgba($primary-color, 0.7);
@@ -52,20 +55,20 @@
 .card__input-search-box {
     display: inline-block;
     position: relative;
+    margin-left: 17px;
 }
 .card__input-search {
     background: $gray;
     border-radius: 3px;
     padding: 9px 37px 9px 17px;
     border: none;
-    margin-left: 17px;
-    position: relative;
+    width: 100%;
 }
 .card__icon-search {
     position: absolute;
     width: 16px;
     height: 17px;
-    right: 15px;
+    right: 6%;
     top: 50%;
     transform: translateY(-50%);
     background-image: url("../../../images/search.svg");
