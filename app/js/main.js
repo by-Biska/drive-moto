@@ -122,4 +122,9 @@ $(function () {
     $(this).next().slideToggle(200)
     $(this).toggleClass('footer__top-title--active')
   });
+
+  // aside-filter-btn
+  $('.aside__btn').on("click", function () {
+    $(this).next().slideToggle(200)
+  });
 });
