@@ -52,6 +52,7 @@
     }
     .menu-mobile__line-wrapper {
         display: block;
+        margin-bottom: 25px;
     }
     .menu__item {
         font-size: 17px;
@@ -275,5 +276,8 @@
     }
     .footer__top-item-first {
         border-top: 1px solid #949494;
+    }
+    .pagination-list__item {
+        margin: 0;
     }
 }
