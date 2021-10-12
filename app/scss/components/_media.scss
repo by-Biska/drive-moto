@@ -36,6 +36,9 @@
     .header__address {
         margin-right: 5px;
     }
+    .card__list-address {
+        width: 157px;
+    }
 }
 @media (max-width: 900px) {
     .header__bottom {
@@ -76,6 +79,7 @@
         overflow-x: scroll;
         display: flex;
         white-space: nowrap;
+        justify-content: flex-start;
     }
     .categories__inner {
         grid-template-columns: repeat(2, 1fr);
@@ -99,9 +103,57 @@
     .catalog__inner .catalog-product {
         grid-template-columns: repeat(1, 1fr);
     }
+    .card__tab + .card__tab {
+        margin-left: 25px;
+    }
+}
+@media (max-width: 800px) {
+    .card__top-line {
+        display: block;
+    }
+    .card__pickup-box {
+        display: block;
+    }
+    .card__pickup-box {
+        margin-top: 20px;
+    }
+    .card__list-item {
+        display: block;
+        div {
+            margin-bottom: 15px;
+        }
+    }
+    .card__list-itemtitle {
+        display: none;
+    }
+    .card__top-line {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 750px) {
+    .product-card__inner {
+        flex-wrap: wrap;
+    }
+    .product-card__tabs {
+        display: none;
+    }
+    .product-card__content {
+        order: -1;
+    }
+    .product-card__btn {
+        display: block;
+        margin-top: 40px;
+    }
+    .product-card__img-box {
+        width: 100%;
+    }
+    .product-card__img {
+        display: block;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 700px) {
-    .catalog__filter{
+    .catalog__filter {
         display: block;
     }
     .catalog__filter-btn {
@@ -194,6 +246,10 @@
         display: none;
         width: 100%;
     }
+    .product-card__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 @media (max-width: 600px) {
     .slick-dots {
@@ -243,6 +299,13 @@
     .footer__title {
         text-align: center;
     }
+    .card__label-pickup + .card__label-pickup {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .card__label-pickup {
+        display: block;
+    }
 }
 @media (max-width: 380px) {
     .footer__top-item {
@@ -279,5 +342,13 @@
     }
     .pagination-list__item {
         margin: 0;
+    }
+    .product-card__btn button {
+        width: 100%;
+    }
+}
+@media (max-width: 303px) {
+    .rate {
+        margin-left: 0 !important;
     }
 }

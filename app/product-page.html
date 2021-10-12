@@ -221,6 +221,9 @@
             <p class="product-card__price-old">15 160 $</p>
             <p class="product-card__price-new">14 320 $</p>
             <a class="product-card__link" href="#">Found it cheaper? Let's lower the price!</a>
+            <div class="product-card__btn product-card__btn-mobile">
+              <button>Buy</button>
+            </div>
           </div>
           <div class="product-card__content">
             <h1 class="product-card__title">Jet ski BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
@@ -283,7 +286,7 @@
     <section class="card__tabs">
       <div class="container">
         <div class="tabs-wrapper">
-          <div class="tabs card__tab-box">
+          <div class="tabs card__tab-box mobile-tabs">
             <a class="tab card__tab" href="#card-tab__tab-1">About product</a>
             <a class="tab card__tab" href="#card-tab__tab-2">Specifications</a>
             <a class="tab card__tab" href="#card-tab__tab-3">Reviews</a>
@@ -300,10 +303,13 @@
               <form>
                 <div class="card__top-line">
                   <label class="card__label-search">Store
-                    <input class="card__input-search" type="text">
-                    <div class="card__icon-search"></div>
+                    <div class="card__input-search-box">
+                      <input class="card__input-search" type="text">
+                      <div class="card__icon-search"></div>
+                    </div>
                   </label>
-                  <label class="card__label-pickup">
+                  <div class="card__pickup-box">
+                    <label class="card__label-pickup">
                     <input class="filter-style" type="radio" name="take">
                     Pick up today
                   </label>
@@ -311,6 +317,7 @@
                     <input class="filter-style" type="radio" name="take" checked>
                     Pick up within a week
                   </label>
+                  </div>
                 </div>
                 <ul class="card__list">
                   <li class="card__list-item card__list-itemtitle">
@@ -385,7 +392,7 @@
         <div class="products__inner">
           <h2 class="products__title">Buy with this product</h2>
           <div class="tabs-wrapper">
-            <div class="tabs products__tabs">
+            <div class="tabs products__tabs mobile-tabs">
               <a class="tab products__tab tab--active" href="#popular-tab-1">Spares</a>
               <a class="tab products__tab" href="#popular-tab-2">Engines</a>
               <a class="tab products__tab" href="#popular-tab-3">Tires</a>
