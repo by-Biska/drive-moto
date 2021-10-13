@@ -2013,7 +2013,7 @@ body {
 .sale-item__price-new::after {
   position: absolute;
   content: "";
-  background-image: url("../../images/dollar.svg");
+  background-image: url("../images/dollar.svg");
   background-repeat: no-repeat;
   width: 15px;
   height: 18px;
@@ -2028,12 +2028,12 @@ body {
   display: inline-block;
   padding: 2px 5px;
   background-repeat: no-repeat;
-  background-image: url("../../images/old-line.svg");
+  background-image: url("../images/old-line.svg");
 }
 .sale-item__price-old::after {
   position: absolute;
   content: "";
-  background-image: url("../../images/dollar-small.svg");
+  background-image: url("../images/dollar-small.svg");
   background-repeat: no-repeat;
   width: 7px;
   height: 13px;
@@ -2149,7 +2149,7 @@ body {
 .categories__item-text::after {
   content: "";
   position: absolute;
-  background-image: url("../../images/link-arrow.svg");
+  background-image: url("../images/link-arrow.svg");
   right: 0;
   bottom: 4px;
   width: 6px;
@@ -2245,7 +2245,7 @@ body {
 .products-item__favorite::before {
   content: "";
   position: absolute;
-  background-image: url("../../images/favorite.svg");
+  background-image: url("../images/favorite.svg");
   width: 24px;
   height: 22px;
   top: 0;
@@ -2253,7 +2253,7 @@ body {
   transition: all 0.3s;
 }
 .products-item__favorite.active::before {
-  background-image: url("../../images/favorite-active.svg");
+  background-image: url("../images/favorite-active.svg");
 }
 .products-item__img {
   height: 200px;
@@ -2432,7 +2432,7 @@ body {
   width: 6px;
   height: 9px;
   top: 5px;
-  background-image: url("../../../images/link-arrow.svg");
+  background-image: url("../images/link-arrow.svg");
 }
 .breadcrumbs__list-item:last-child::after {
   display: none;
@@ -2635,7 +2635,7 @@ body {
   height: 6px;
   margin: 3px 0 0 2.5px;
   transform: rotate(0);
-  background-image: url("../../../images/checked-ico.svg");
+  background-image: url("../images/checked-ico.svg");
 }
 
 .jq-radio.checked .jq-radio__div {
@@ -2737,7 +2737,7 @@ body {
 .filter__item-drop::before {
   content: "";
   position: absolute;
-  background-image: url("../../../images/drop-down.svg");
+  background-image: url("../images/drop-down.svg");
   left: 0;
   bottom: 5px;
   width: 12px;
@@ -2884,7 +2884,7 @@ body {
   right: 0;
   top: 4px;
   left: unset;
-  background-image: url("../../../images/drop-down.svg");
+  background-image: url("../images/drop-down.svg");
 }
 .filter__extra-content {
   display: none;
@@ -2917,7 +2917,7 @@ body {
   width: 12px;
   height: 8px;
   border: none;
-  background-image: url("../../../images/drop-down.svg");
+  background-image: url("../images/drop-down.svg");
 }
 
 .jq-selectbox__select:hover,
@@ -2986,7 +2986,7 @@ body {
   font-size: 30px;
   line-height: 44px;
   opacity: 0.6;
-  background-image: url("../../../images/old-line.svg");
+  background-image: url("../images/old-line.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -3026,13 +3026,13 @@ body {
 .product-card__icon-favorite {
   width: 24px;
   height: 22px;
-  background-image: url("../../../images/favorite.svg");
+  background-image: url("../images/favorite.svg");
   display: inline-block;
   outline: none;
   transition: all 0.3s;
 }
 .product-card__icon-favorite.active {
-  background-image: url("../../../images/favorite-active.svg");
+  background-image: url("../images/favorite-active.svg");
 }
 .product-card__icon-compare,
 .product-card .rate {
@@ -3191,7 +3191,7 @@ body {
   right: 6%;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("../../../images/search.svg");
+  background-image: url("../images/search.svg");
   z-index: 6;
 }
 
@@ -3557,7 +3557,7 @@ body {
     font-size: 0;
     padding: 0;
     margin-left: 0;
-    background-image: url("../../images/search-mobile.svg");
+    background-image: url("../images/search-mobile.svg");
     right: 15px;
     background-repeat: no-repeat;
     top: 50%;
@@ -3722,7 +3722,7 @@ body {
     height: 8px;
     right: 12px;
     top: 43%;
-    background-image: url("../../images/drop-down.svg");
+    background-image: url("../images/drop-down.svg");
     background-repeat: no-repeat;
   }
 
