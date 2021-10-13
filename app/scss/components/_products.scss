@@ -75,7 +75,7 @@
         &::before {
             content: "";
             position: absolute;
-            background-image: url("/dist/images/favorite.svg");
+            background-image: url("../images/favorite.svg");
             width: 24px;
             height: 22px;
             top: 0;
@@ -83,7 +83,7 @@
             transition: all 0.3s;
         }
         &.active::before {
-            background-image: url("../../images/favorite-active.svg");
+            background-image: url("../images/favorite-active.svg");
         }
     }
     &__img {

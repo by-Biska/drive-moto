@@ -91,7 +91,7 @@
         &::after {
             position: absolute;
             content: "";
-            background-image: url("../../images/dollar.svg");
+            background-image: url("../images/dollar.svg");
             background-repeat: no-repeat;
             width: 15px;
             height: 18px;
@@ -108,11 +108,11 @@
         display: inline-block;
         padding: 2px 5px;
         background-repeat: no-repeat;
-        background-image: url("../../images/old-line.svg");
+        background-image: url("../images/old-line.svg");
         &::after {
             position: absolute;
             content: "";
-            background-image: url("../../images/dollar-small.svg");
+            background-image: url("../images/dollar-small.svg");
             background-repeat: no-repeat;
             width: 7px;
             height: 13px;

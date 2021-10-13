@@ -85,7 +85,7 @@
             height: 6px;
             margin: 3px 0 0 2.5px;
             transform: rotate(0);
-            background-image: url("../../../images/checked-ico.svg");
+            background-image: url("../../images/checked-ico.svg");
         }
     }
 }
@@ -180,7 +180,7 @@
         &::before {
             content: "";
             position: absolute;
-            background-image: url("../../../images/drop-down.svg");
+            background-image: url("../../images/drop-down.svg");
             left: 0;
             bottom: 5px;
             width: 12px;
@@ -338,7 +338,7 @@
         right: 0;
         top: 4px;
         left: unset;
-        background-image: url("../../../images/drop-down.svg");
+        background-image: url("../../images/drop-down.svg");
     }
     &-content {
         display: none;
@@ -369,7 +369,7 @@
     width: 12px;
     height: 8px;
     border: none;
-    background-image: url("../../../images/drop-down.svg");
+    background-image: url("../../images/drop-down.svg");
 }
 .jq-selectbox__select:hover,
 .jq-selectbox__select:active {
