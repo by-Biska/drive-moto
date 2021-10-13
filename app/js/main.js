@@ -18,6 +18,8 @@ $(function () {
 
     $(this).addClass("tab--active");
     $($(this).attr("href")).addClass("tabs-content--active");
+
+    $('.products-slider').slick('setPosition')
   });
 
   // Favorite

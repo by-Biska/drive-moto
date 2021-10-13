@@ -318,6 +318,7 @@
     .footer__top-title {
         padding: 15px 0;
         position: relative;
+        pointer-events: all;
         &::after {
             content: "";
             position: absolute;

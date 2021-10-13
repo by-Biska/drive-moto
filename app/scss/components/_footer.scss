@@ -20,6 +20,9 @@
         line-height: 17px;
         @extend %sf-700;
     }
+    &__top-title {
+        pointer-events: none;
+    }
     &-form {
         margin-top: 34px;
         display: flex;
