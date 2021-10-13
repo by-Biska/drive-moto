@@ -61,7 +61,7 @@ function scripts() {
 }
 
 function html() {
-  return src(["app/index.html"]).pipe(dest("dist/"));
+  return src(["app/*.html"]).pipe(dest("dist/"));
 }
 
 function styles() {
