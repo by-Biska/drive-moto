@@ -117,6 +117,7 @@ $(function () {
   // menu mobile
   $('.menu__btn').on("click", function () {
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+    $('.menu__btn').toggleClass('menu__btn--active')
   });
 
   // footer
